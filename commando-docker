@@ -1,0 +1,9 @@
+# Prometheus
+docker run -d --network host -p 9090:9090 \
+-v /home/moises/Desktop/DEV/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml \
+prom/prometheus
+
+
+# Grafana
+docker run -d -p 3000:3000 --name=grafana -v grafana-storage:/var/lib/grafana grafana/grafana
+
